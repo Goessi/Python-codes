@@ -10,7 +10,6 @@ for ha in haha:
 
 ## 3. Getting a Single Column From the Data ##
 
-# weather_data has already been read in automatically to make things easier.
 weather = []
 for row in weather_data:
     weather.append(row[1])
