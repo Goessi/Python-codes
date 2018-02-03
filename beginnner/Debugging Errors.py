@@ -48,3 +48,6 @@ def feature_counter(input_lst,index, input_str, header_row = False):
 
 summary = summary_statistics(movie_data)
 print(summary)
+
+# errors can be defined into two main types
+# one is Syntax errors, the other is Runtime errors
