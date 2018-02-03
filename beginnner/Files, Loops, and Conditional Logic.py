@@ -39,8 +39,6 @@ print(numerical_list)
 
 ## 7. Filter the List ##
 
-# The last value is ~100 people
-numerical_list[len(numerical_list)-1]
 thousand_or_greater = []
 for haha in numerical_list:
     if haha[1] >= 1000:
