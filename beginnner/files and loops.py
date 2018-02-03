@@ -17,7 +17,7 @@ sample = "john,plastic,joe"
 split_list = sample.split(",")
 print(split_list)
 
-# Here's another example.
+
 string_two = "How much wood\ncan a woodchuck chuck\nif a woodchuck\ncould chuck wood?"
 split_string_two = string_two.split('\n')
 print(split_string_two)
@@ -29,7 +29,7 @@ data = f.read()
 rows = data.split('\n')
 print(rows[0:6])
 
-## 5. Practice - Loops ##
+## 5. Loops ##
 
 ten_rows = rows[0:10]
 
@@ -37,6 +37,7 @@ for it in ten_rows:
     print(it)
 
 ## 6. List of Lists ##
+# create a list with elements are also lists
 
 three_rows = ["Albuquerque,749", "Anaheim,371", "Anchorage,828"]
 final_list = []
@@ -48,7 +49,7 @@ print(final_list[0])
 print(final_list[1])
 print(final_list[2])
 
-## 7. Practice - Splitting Elements in a List ##
+## 7. Splitting Elements in a List ##
 
 f = open('crime_rates.csv', 'r')
 data = f.read()
