@@ -10,7 +10,7 @@ for each in split_movies:
 
 print(movie_data[0:5])
 
-## 3. Writing Our Own Functions ##
+## 3. Writing Functions ##
 
 
 def first_elts(input_lst):
