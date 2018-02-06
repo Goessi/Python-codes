@@ -31,7 +31,7 @@ class Dataset:
     def __init__(self, data):
         self.data = data
         
-    # Your method goes here
+    
     def print_data(self,num):
         print(self.data[0:num])
         
@@ -67,9 +67,6 @@ class Dataset:
                     haha.append(item[ind])
                 return haha
             
-        
-    # Add your method here.
-
 nfl_dataset = Dataset(nfl_data)
 year_column = nfl_dataset.column('year')
 player_column = nfl_dataset.column('player')
