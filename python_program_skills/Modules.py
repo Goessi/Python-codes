@@ -3,7 +3,7 @@
 
 import math
 root = math.sqrt(99)
-flr = math.floor(89.9)
+flr = math.floor(89.9) #89
 
 ## 2. Importing Using An Alias ##
 
@@ -52,7 +52,6 @@ import csv
 f = open("nfl.csv", 'r')
 nfl = list(csv.reader(f))
 
-# Define your function here.
 def nfl_wins(team):
     count = 0
     for row in nfl:
