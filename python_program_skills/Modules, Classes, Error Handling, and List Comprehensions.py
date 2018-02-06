@@ -4,7 +4,7 @@ import csv
 file = open('nfl_suspensions_data.csv')
 nfl = csv.reader(file)
 nfl_suspensions = list(nfl)
-nfl_suspensions = nfl_suspensions[1:]
+nfl_suspensions = nfl_suspensions[1:] # to avoid header
 years = {}
 for item in nfl_suspensions:
     row_year = item[5]
