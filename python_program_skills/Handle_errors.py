@@ -1,7 +1,7 @@
 ## 2. Sets ##
 
- gender = []
- for item in legislators:
+gender = []
+for item in legislators:
     gender.append(item[3])
 gender = set(gender)
 print(gender)
@@ -41,7 +41,8 @@ try:
     ha = float('hello')
 except :
     print('Error converting to float.')
-
+# as the try part went wrong, the print will work 
+# use try/except hepls us continue running the codes no matter we have error in try
 
 ## 7. Exception Instances ##
 
@@ -59,7 +60,7 @@ for ele in birth_years:
     try:
         year = int(year)
     except:
-        pass
+        pass # do nothing to the errors
     converted_years.append(year)
 
 ## 9. Convert Birth Years to Integers ##
