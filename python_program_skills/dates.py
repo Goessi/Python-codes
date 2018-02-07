@@ -3,8 +3,11 @@
 import time
 current_time = time.time()
 print(current_time)
+# print how many seconds now from the 1970
 
 ## 2. Converting Timestamps ##
+
+# time.gmtime has many attributes like tm_year,tm_mon,tm_mday,tm_hour,tm_min
 
 import time
 current_time = time.time()
@@ -14,7 +17,7 @@ current_hour = current_struct_time.tm_hour
 ## 3. UTC ##
 
 import datetime
-current_datetime = datetime.datetime.utcnow()
+current_datetime = datetime.datetime.utcnow() # return the current utc time
 current_year = current_datetime.year
 current_month = current_datetime.month
 
