@@ -9,6 +9,8 @@ total = sum([6,11])
 
 ## 3. Overwriting a Built-In Function ##
 
+# not name variables like build-in functions or so
+
 sum = sum(borrower_default_count_240)
 # Run the code, and then uncomment the bottom
 # line to see the result.
