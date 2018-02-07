@@ -35,6 +35,8 @@ for row in legislators:
 
 ## 7. Comparing with None ##
 
+# use is not None
+
 values = [None, 10, 20, 30, None, 50]
 checks = []
 for value in values:
