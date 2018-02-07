@@ -25,7 +25,7 @@ games = []
 for item in nfl:
     teams.append(item[1])
     games.append(item[2])
-unique_teams = set(teams)
+unique_teams = set(teams) # will return only unique values
 unique_games = set(games)
     
     
