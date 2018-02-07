@@ -7,12 +7,17 @@ regex = "data"
 
 strings = ["bat", "robotics", "megabyte"]
 regex = "..t"
+# regex matches all in strings
+# special character "." to indicate that any character can be put in its place
 
 ## 3. Searching the Beginnings And Endings Of Strings ##
 
 strings = ["better not put too much", "butter in the", "batter"]
 bad_string = "We also wouldn't want it to be bitter"
 regex = "^b.tter"
+
+# "^a" will match all strings that start with "a"
+# "a$" will match all strings that end with "a"
 
 ## 5. Reading and Printing the Data Set ##
 
@@ -25,8 +30,12 @@ for item in posts:
 
 ## 6. Counting Simple Matches in the Data Set with re() ##
 
-import re
+# re.search(regex, string)
+# we can check whether string is a match for regex
+# If it is, the expression will return a match object
+# If it isn't, it will return None
 
+import re
 of_reddit_count = 0
 for item in posts:
     if re.search("of Reddit",item[0]) is not None:
@@ -35,6 +44,8 @@ for item in posts:
         of_reddit_count = of_reddit_count + 0
 
 ## 7. Using Square Brackets to Match Multiple Characters ##
+
+# useful for both upper or lower characters
 
 import re
 
@@ -118,7 +129,8 @@ for year in strings:
 ## 14. Repeating Characters in Regular Expressions ##
 
 import re
-
+# repest [0-9] three times
+# the same effect as above
 year_strings = []
 for year in strings:
     if re.search('[1-2][0-9]{3}',year)is not None:
