@@ -40,7 +40,6 @@ nfl_dataset.print_data(5)
 
 ## 5. Enhancing the Initializer ##
 
-# Default display code
 class Dataset:
     def __init__(self, data):
         self.data = data[1:]
@@ -73,7 +72,6 @@ player_column = nfl_dataset.column('player')
 
 ## 7. Count Unique Method ##
 
-# Default display code
 class Dataset:
     def __init__(self, data):
         self.header = data[0]
@@ -103,14 +101,11 @@ total_years = nfl_dataset.count_unique('year')
 
 ## 8. Make Objects Human Readable ##
 
-# Default display code
 class Dataset:
     def __init__(self, data):
         self.header = data[0]
         self.data = data[1:]
-    
-    # Add the special method here
-    
+         
     def column(self, label):
         if label not in self.header:
             return None
