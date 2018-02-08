@@ -14,7 +14,6 @@ print(series_film.head(5))
 
 ## 3. Custom Indexes ##
 
-# Import the Series object from pandas
 from pandas import Series
 
 film_names = series_film.values
