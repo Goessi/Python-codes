@@ -14,6 +14,8 @@ print(age_null_count)
 
 ## 4. Whats the big deal with missing data? ##
 
+# cannot compute mean for null value
+
 age_is_null = pd.isnull(titanic_survival["age"])
 age_not_null = titanic_survival['age'][age_is_null == False]
 correct_mean_age = sum(age_not_null)/len(age_not_null)
@@ -54,7 +56,6 @@ new_titanic_survival = titanic_survival.dropna(axis = 0, subset = ['age','sex'])
 
 ## 10. Using iloc to Access Rows by Position ##
 
-# We have already sorted new_titanic_survival by age
 first_five_rows = new_titanic_survival.iloc[0:5]
 first_ten_rows = new_titanic_survival.iloc[0:10]
 row_position_fifth = new_titanic_survival.iloc[4]
@@ -72,6 +73,8 @@ row_index_25_survived = new_titanic_survival.loc[25,'survived']
 five_rows_three_cols = new_titanic_survival.iloc[0:5,0:3]
 
 ## 12. Reindexing Rows ##
+
+# usually, we create a new column contains new index, if we don't want to the old index to exists, use drop=True
 
 titanic_reindexed = new_titanic_survival.reset_index(drop = True)
 print(titanic_reindexed.iloc[0:5,0:3])
