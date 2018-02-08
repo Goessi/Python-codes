@@ -5,11 +5,11 @@ vector = np.array([10,20,30])
 matrix = np.array([[5,10,15],[20,25,30],[35,40,45]])
 
 ## 3. Array shape ##
-
+import numpy as np
 vector = np.array([10, 20, 30])
 matrix = np.array([[5, 10, 15], [20, 25, 30], [35, 40, 45]])
 
-import numpy as np
+
 vector_shape = vector.shape
 matrix_shape = matrix.shape
 print(vector_shape)
@@ -18,7 +18,9 @@ print(matrix_shape)
 ## 4. Using NumPy ##
 
 import numpy
-world_alcohol = numpy.genfromtxt('world_alcohol.csv',delimiter = ',')
+world_alcohol = numpy.genfromtxt('world_alcohol.csv',delimiter = ',') 
+# Load data from a text file, with missing values handled as specified.
+# numpy.loadtext: equivalent function when no data is missing.
 print(type(world_alcohol))
 
 ## 5. Data types ##
@@ -30,8 +32,13 @@ print(world_alcohol_dtype)
 ## 7. Reading in the data correctly ##
 
 import numpy
+
+# all of the values in a NumPy array have to have the same data type
+
 world_alcohol = numpy.genfromtxt('world_alcohol.csv','U75',skip_header = 1,delimiter = ',')
 print(world_alcohol)
+
+# NumPy displays numeric values in scientific notation by default to account for larger or more precise numbers.
 
 ## 8. Indexing arrays ##
 
