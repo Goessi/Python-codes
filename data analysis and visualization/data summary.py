@@ -47,3 +47,4 @@ for item in majors:
         rg_lower_count += 1
 print(rg_lower_count)
     
+# by summarizing different data, we could hace an initial impact about data
