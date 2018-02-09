@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 fandango_scores = pd.read_csv('fandango_scores.csv')
 fandango_distribution = fandango_scores['Fandango_Ratingvalue'].value_counts().sort_index()
 
-imdb_distribution = fandango_scores['IMDB_norm'].value_counts().sort_index()
+imdb_distribution = fandango_scores['IMDB_norm'].value_counts().sort_index() # sort the df by index
 
 print(fandango_distribution)
 print(imdb_distribution)
