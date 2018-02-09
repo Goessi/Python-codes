@@ -45,7 +45,7 @@ bar_positions = arange(5) + 0.75
 tick_positions = range(1,6)
 
 fig,ax = plt.subplots()
-ax.barh(bar_positions,bar_widths,0.5)
+ax.barh(bar_positions,bar_widths,0.5) # h indicates horizontal
 ax.set_yticks(tick_positions)
 ax.set_yticklabels(num_cols)
 ax.set_ylabel('Rating Source')
