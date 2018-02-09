@@ -88,7 +88,8 @@ for i in range(5):
     start_index = i*12
     end_index = (i+1)*12
     subset = unrate[start_index:end_index]
-    plt.plot(subset['MONTH'], subset['VALUE'], c=colors[i],label = 'year')
+    label = str(1948 + i)
+    plt.plot(subset['MONTH'], subset['VALUE'], c=colors[i],label = label)
     year =+ 1
 plt.legend(loc = 'upper left')
 plt.show()
