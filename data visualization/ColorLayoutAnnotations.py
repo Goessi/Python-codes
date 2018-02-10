@@ -29,7 +29,6 @@ dark_blue = (0/256,107/256,164/256)
 orange = (255/256,128/256,14/256)
 for sp in range(0,4):
     ax = fig.add_subplot(2,2,sp+1)
-    # The color for each line is assigned here.
     ax.plot(women_degrees['Year'], women_degrees[major_cats[sp]], c=dark_blue, label='Women')
     ax.plot(women_degrees['Year'], 100-women_degrees[major_cats[sp]], c=orange, label='Men')
     for key,spine in ax.spines.items():
