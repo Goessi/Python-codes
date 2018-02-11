@@ -7,7 +7,7 @@ print(correlations.head())
 ## 5. Plotting Enrollment With the Plot() Accessor ##
 
 import matplotlib.pyplot as plt
-combined.plot.scatter(x = 'total_enrollment',y = 'sat_score')
+combined.plot.scatter(x = 'total_enrollment',y = 'sat_score') # dataframe.plot.scatter(x,y)
 plt.show()
 
 ## 6. Exploring Schools With Low SAT Scores and Enrollment ##
@@ -76,11 +76,11 @@ print(districts)
 from mpl_toolkits.basemap import Basemap
 m = Basemap(
     projection='merc', 
-    llcrnrlat=40.496044, 
-    urcrnrlat=40.915256, 
-    llcrnrlon=-74.255735, 
-    urcrnrlon=-73.700272,
-    resolution='i'
+    llcrnrlat=40.496044, #latitude of lower left hand corner of the desired map domain (degrees).
+    urcrnrlat=40.915256, #latitude of upper right hand corner of the desired map domain (degrees).
+    llcrnrlon=-74.255735, #longitude of lower left hand corner of the desired map domain (degrees).
+    urcrnrlon=-73.700272, #longitude of upper right hand corner of the desired map domain (degrees).
+    resolution='i' 
 )
 
 m.drawmapboundary(fill_color='#85A6D9')
