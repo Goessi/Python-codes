@@ -1,5 +1,9 @@
 ## 1. Introduction to Command Line Python ##
 
+/home/dq$ touch script.py
+/home/dq$ nano script.py
+          if __name__ == "__main__":
+              print("Welcome to a Python script")
 /home/dq$ python script.py
 
 ## 2. Using Different Python Versions ##
@@ -32,6 +36,10 @@
 
 ## 9. Accessing Command Line Arguments ##
 
+(python3) /home/dq$ nano script.py
+          import sys
+          if __name__ == "__main__":
+              print(sys.argv[1])
 (python3) /home/dq$ python script.py "Hello from the command line"
 
 ## 10. Deactivating a virtualenv ##
