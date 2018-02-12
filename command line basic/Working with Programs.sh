@@ -13,10 +13,15 @@
 ## 4. Accessing Environment Variables ##
 
 /home/dq$ python
+/home/dq$ import os
+/home/dq$ print(os.environ["FOOD"])
+/home/dq$ exit()
+/home/dq$ echo $FOOD
 
 ## 5. Calling Programs ##
 
 /home/dq$ /usr/bin/python
+/home/dq$ exit()
 
 ## 6. The PATH Variable ##
 
