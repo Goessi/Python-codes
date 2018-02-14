@@ -20,10 +20,11 @@
 
 ## 6. Committing Changes ##
 
-/home/dq/random_numbers$ git commit -m "Initial commit. Added script.py and R
+/home/dq/random_numbers$ git commit -m "Initial commit. Added script.py and README.md"
 
 ## 7. Viewing File Differences ##
 
+/home/dq/random_numbers$ git diff
 /home/dq/random_numbers$ git status
 
 ## 8. Making a Second Commit ##
